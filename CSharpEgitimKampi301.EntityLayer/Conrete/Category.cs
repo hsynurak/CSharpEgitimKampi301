@@ -11,7 +11,7 @@ namespace CSharpEgitimKampi301.EntityLayer.Conrete
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public bool CategoryStatus { get; set; }
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get; set; } //Product classında burada bulunan bilgilere erişim olmasını sağlamak için List kullanıyoruz.
     }
 }
 

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,8 @@ namespace CSharpEgitimKampi301.EntityLayer.Conrete
         public decimal ProductPrice { get; set; }
         public string ProductDescription { get; set; }
         public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
+        public virtual Category Category { get; set; }  //Bunun ile beraber CategoryId bilgisini alabiliyorum.
+                                                        //Aynı zamanda bu iletişimin sağlanabilmesi için Category class içine List kullanarak Product classını bildiriyorum.
         public List<Order> Orders { get; set; }
     }
 }

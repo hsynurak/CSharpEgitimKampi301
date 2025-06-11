@@ -14,6 +14,7 @@ namespace CSharpEgitimKampi301.EntityLayer.Conrete
         public string CustomerDistrict { get; set; }
         public string CustomerCity { get; set; }
         public List<Order> Orders { get; set; }
+        public bool CustomerStatus { get; set; }
 
         //Burada Order tablosu ile ilişki kurabilmek için Orders nesnesini oluşturduk.
     }
