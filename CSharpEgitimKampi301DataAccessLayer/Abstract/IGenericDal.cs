@@ -14,8 +14,13 @@ namespace CSharpEgitimKampi301DataAccessLayer.Abstract
     {
         void Insert(T entity);
         void Update(T entity);
-        void Delete(int id);
+        void Delete(T entity);
         List<T> GetAll();
         T GetById(int id);
     }
 }
+
+
+//Burayı mantık olarak bir sözlük gibi düşünebiliriz.
+//Benimle çalışan her sınıf bu beş işlemi barındırmak zorunda.
+//Ama burada nasıl yapılacağı bilgisi yoktur. Bunlar Repository içinde belirtiliyor.

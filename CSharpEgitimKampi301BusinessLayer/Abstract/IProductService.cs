@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using CSharpEgitimKampi301.EntityLayer.Conrete;
 
-namespace CSharpEgitimKampi301DataAccessLayer.Abstract
+namespace CSharpEgitimKampi301BusinessLayer.Abstract
 {
-    public interface IProductDal : IGenericDal<Product>
+    public interface IProductService: IGenericService<Product>
     {
-        List<Product> GetProductsWithCategory(); 
+        List<Product> TGetProductsWithCategory();
     }
 }

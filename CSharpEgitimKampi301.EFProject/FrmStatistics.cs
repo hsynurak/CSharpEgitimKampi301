@@ -40,6 +40,14 @@ namespace CSharpEgitimKampi301.EFProject
             //En Yüksek Kapasiteli Tur
             var maxCapacity = db.TblLocations.Max(x=>x.LocationCapacity);
             lblMaxCapacityTour.Text = db.TblLocations.Where(x=>x.LocationCapacity == maxCapacity).Select(x=>x.LocationCity).FirstOrDefault();
+            //Eklenen Son Ülke
+            int lastCountryId = db.TblLocations.Max(x => x.LocationID);
+            lblLastCountry.Text = db.TblLocations.Where(x => x.LocationID == lastCountryId).Select(x => x.LocationCountry).FirstOrDefault();
+            //İstanbul Tur Kapasitesi
+            lblIstanbulLocationCapacity.Text = db.TblLocations.Where(x => x.LocationCity == "İstanbul").Select(x => x.LocationCapacity).FirstOrDefault().ToString();
+            //Rehber Neriman Öztürk Tur Sayısı
+            var guideIdByNameNeriman = db.TblGuides.Where(x => x.GuideName == "Neriman" && x.GuideSurname == "Öztürk").Select(x => x.GuideID).FirstOrDefault();
+            lblGuideNerimanTourCount.Text = db.TblLocations.Where(x => x.GuideID == guideIdByNameNeriman).Count().ToString();
         }
     }
 }
