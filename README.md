@@ -29,6 +29,7 @@ CSharpEgitimKampi301/
 - **Business Layer**: Uygulama iş kuralları ve servis yapısı burada tanımlıdır.
 - **Presentation Layer**: Kullanıcıya sunulan arayüz veya test senaryoları bu katmanda yer alır.
 - **EFProject**: Entity Framework pratiği yapılırken oluşturulan form uygulamaları burada bulunmaktadır. 3 ayrı form uygulaması vardır. Birincisinde (Form1.cs) sisteme tur rehberleri için CRUD işlemleri yapılıyor. İkinci form içinde (FrmLocation) sisteme yapılacak turlar hakkında bilgiler girilmektedir. Son from içinde (FrmStatistics.cs) veri tabanına kaydedilmiş olan turlar hakkında bazı istatistiksel bilgiler rapor edilmiştir.
+  
 ![image](https://github.com/user-attachments/assets/af92ead6-2ac2-4ca5-907a-280288d82fc4)
 
 - 
